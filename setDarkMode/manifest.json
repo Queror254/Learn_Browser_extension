@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Mode On",
+  "version": "1.0.0",
+  "description": "A simple browser extension to enable dark mode on websites.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Enable Dark Mode"
+  },
+  "icons": { "50": "icon0.png"  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
+
+ 
